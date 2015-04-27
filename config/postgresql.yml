@@ -8,26 +8,26 @@
 #    PGDATABASE
 
 Default: &defaults
-  user: webserver2
-  password: webserver2
-  host: localhost
+  user: master_yesod
+  password: EfK&-{-(
+  host: portal.chiqoi8zcqr0.eu-west-1.rds.amazonaws.com
   port: 5432
-  database: webserver2
+  database: yesod_portal
   poolsize: 10
 
 Development:
   <<: *defaults
 
 Testing:
-  database: webserver2_test
+  database: yesod_portal_test
   <<: *defaults
 
 Staging:
-  database: webserver2_staging
+  database: yesod_portal_staging
   poolsize: 100
   <<: *defaults
 
 Production:
-  database: webserver2_production
+  database: yesod_portal_production
   poolsize: 100
   <<: *defaults
